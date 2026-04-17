@@ -675,6 +675,7 @@ namespace AppUI.ViewModels
                     {
                         Logger.Error(ex);
                         Sys.Message(new WMessage(ResourceHelper.Get(StringKey.FailedToMoveModsToNewLibrary)));
+                        MessageDialogWindow.Show(ResourceHelper.Get(StringKey.FailedToMoveModsToNewLibrary), ResourceHelper.Get(StringKey.Error), MessageBoxButton.OK, MessageBoxImage.Error);
                     }
                 }
             }
